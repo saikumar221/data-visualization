@@ -2,6 +2,7 @@
   "name": "data-visualization",
   "version": "0.1.0",
   "private": true,
+  "homepage": "  https://saikumar221.github.io/data-visualization/",
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -26,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +49,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "transform": {
     "\\.js$": "<rootDir>/node_modules/babel-jest"
   }
